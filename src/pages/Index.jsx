@@ -4,8 +4,8 @@ const Index = () => {
   return (
     <Container maxW="container.xl" p={0} centerContent>
       <Box width="100vw" height="100vh" position="relative">
-        <Image src="https://caesar-age.netlify.app/ceasar-on-back.jpg" alt="Caesar on Back" objectFit="cover" objectPosition="top" width="100vw" height="100vh" position="fixed" top="0" left="0" />
-        <VStack spacing={4} position="absolute" p={4} textAlign="center">
+        <Image src="https://caesar-age.netlify.app/ceasar-on-back.jpg" alt="Caesar on Back" objectFit="cover" objectPosition="center" width="100vw" height="100vh" position="fixed" top="0" left="0" />
+        <VStack spacing={4} position="absolute" p={4} textAlign="center" left="50%" top="50%" transform="translate(-50%, -50%)">
           <Text fontSize="4xl" color="white" fontWeight="bold" textShadow="2px 2px 8px rgba(0,0,0,0.8)">Welcome to Caesar's World</Text>
           <Text fontSize="xl" color="white" textShadow="1px 1px 6px rgba(0,0,0,0.6)">Explore the legacy of an empire</Text>
           <Text fontSize="md" color="white" textShadow="1px 1px 4px rgba(0,0,0,0.5)">
