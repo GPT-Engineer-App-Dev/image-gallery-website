@@ -1,18 +1,15 @@
-// Update this page (the content is just a fallback if you fail and example)
-// Use chakra-ui
-import { Container, Text, VStack } from "@chakra-ui/react";
-
-// Example of using react-icons
-// import { FaRocket } from "react-icons/fa";
-// <IconButton aria-label="Add" icon={<FaRocket />} size="lg" />; // IconButton would also have to be imported from chakra
+import { Container, Image, Box, Text, VStack } from "@chakra-ui/react";
 
 const Index = () => {
   return (
-    <Container centerContent maxW="container.md" height="100vh" display="flex" flexDirection="column" justifyContent="center" alignItems="center">
-      <VStack spacing={4}>
-        <Text fontSize="2xl">Your Blank Canvas</Text>
-        <Text>Chat with the agent to start making edits.</Text>
-      </VStack>
+    <Container maxW="container.xl" p={0} centerContent>
+      <Box width="100%" height="100vh" display="flex" flexDirection="column" justifyContent="center" alignItems="center">
+        <Image src="https://caesar-age.netlify.app/ceasar-on-back.jpg" alt="Caesar on Back" objectFit="cover" width="100%" height="100%" />
+        <VStack spacing={4} position="absolute" p={4} textAlign="center">
+          <Text fontSize="4xl" color="white" fontWeight="bold" textShadow="2px 2px 8px rgba(0,0,0,0.8)">Welcome to Caesar's World</Text>
+          <Text fontSize="xl" color="white" textShadow="1px 1px 6px rgba(0,0,0,0.6)">Explore the legacy of an empire</Text>
+        </VStack>
+      </Box>
     </Container>
   );
 };
